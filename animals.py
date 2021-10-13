@@ -14,15 +14,15 @@ from spider import Spider
 from toad import Toad
 from turtle import Turtle
 
-miss_fuzz = Llama("Miss Fuzz", "domestic llama")
+miss_fuzz = Llama("Miss Fuzz", "domestic llama", "morning")
 
-mr_ears = Donkey("Mr. Ears","domestic donkey")
+mr_ears = Donkey("Mr. Ears","domestic donkey", "midday")
 
-billy = Goat("Billy", "domestic goat")
+billy = Goat("Billy", "domestic goat", "afternoon")
 
-curly = Pig("Curly", "domestic pig")
+curly = Pig("Curly", "domestic pig", "morning")
 
-joe = Camel("Joe", "domestic camel")
+joe = Camel("Joe", "domestic camel", "midday")
 
 banana_boat = Snake("Banana Boat", "domestic snake")
 
@@ -44,5 +44,7 @@ isaac = Newt("Isaac", "domestic newt")
 
 mr_toad = Toad("Mr. Toad", "domestic toad")
 
-print(miss_fuzz.name)
+roberto = Llama("Roberto", "alpaca", "midday")
+
+print(f'{roberto.name} the {roberto.species} is available during the {roberto.shift} shift.')
 
